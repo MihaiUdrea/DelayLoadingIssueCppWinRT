@@ -18,3 +18,6 @@ File Type: EXECUTABLE IMAGE
     USER32.dll
     VCRUNTIME140D.dll
     ucrtbased.dll
+
+
+# Adding CppWinRT package dependecies remain same as above
