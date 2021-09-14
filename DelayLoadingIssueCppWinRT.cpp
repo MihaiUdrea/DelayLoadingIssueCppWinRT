@@ -4,6 +4,9 @@
 #include "framework.h"
 #include "DelayLoadingIssueCppWinRT.h"
 
+#include <atlbase.h>
+#include <GdiPlus.h>
+
 #define MAX_LOADSTRING 100
 
 // Global Variables:
@@ -22,6 +25,8 @@ int APIENTRY wWinMain(_In_ HINSTANCE hInstance,
                      _In_ LPWSTR    lpCmdLine,
                      _In_ int       nCmdShow)
 {
+    auto s = Gdiplus::Bitmap::FromHBITMAP(nullptr, nullptr);
+
     UNREFERENCED_PARAMETER(hPrevInstance);
     UNREFERENCED_PARAMETER(lpCmdLine);
 
